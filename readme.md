@@ -1,8 +1,8 @@
-Programming Quotes API
+# Programming Quotes API
 
 Github repo: https://github.com/gaforss/quote-api
 
-API Documentation
+## API Documentation
 
 Suported languages: en
 
@@ -14,7 +14,7 @@ GET /quotes/random (get random quote)
 
 POST /quotes
 
-Prerequisites
+## Prerequisites
 
 Install Node.js
 Set environment variables
