@@ -1,6 +1,8 @@
 # Programming Quotes API
 
-**Overview:** This simple project has two buttons, which allow for 'random' quotes to appears along with the 'full' list of quotes to appear through the use of incorporating GET & POST route handlers. You can try out this functionality through any API development tool (i.e.: POSTMAN).
+**Overview:** This simple project uses GET & POST route handlers to ppopulate 'random' quotes along with the 'full' list of quotes from the array data.js file. The intent of this project was to build a GET & POST API that allows anyone to add to the underlying data source array. 
+
+You can try out this functionality through any API development tool (i.e.: POSTMAN).
 
 **Github repo: https://github.com/gaforss/quote-api**
 
