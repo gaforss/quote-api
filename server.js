@@ -37,21 +37,21 @@ app.get('/api/quotes', (req, res) => {
 });
 
 //POST new quote
-app.post('/api/quotes', (req, res) => {
-  const newQuote = req.query.quote;
-  const newname = req.query.name;
-  if (newQuote != '' && newname != '') {
-    quotes.push({ 
-      quote: newQuote, 
-      name: newname 
-    });
-    res.send({ 
-      quote: { 
-        quote: newQuote, 
-        name: newname 
-      } 
-      });
-  } else {
-    res.sendStatus(400);
-  }
+app.post('/api/quotes', (res, req, next) => {
+	const newQuote = req.query.quote;
+	const newName = req.query.name;
+	if (newQuote != '' && newName != '') {
+		quotes.push({
+			quote: newQuote,
+			name: newName
+		});
+		res.send({
+			quote: {
+				quote: newQuote,
+				name: newName
+			}
+		}); 
+	} else {
+		res.status(404).send('Invalid Request');
+	}
 });

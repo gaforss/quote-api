@@ -1,15 +1,15 @@
 const quotes = [
 {
 	quote: 'This is the first quote',
-	name: 'Alex Forss'
+	name: 'Author1'
 },
 {
 	quote: 'This is the second quote',
-	name: 'Katherine Evans'
+	name: 'Author2'
 },
 {
-	quote: 'This is the third quote',
-	name: 'Tiger King'
+	quote: 'Try to add your own quote!',
+	name: '{Your name goes here!}'
 }
 ];
 
